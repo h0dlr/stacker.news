@@ -9,6 +9,7 @@
     "start": "NODE_OPTIONS='--trace-warnings' next start -p $PORT --keepAliveTimeout 120000",
     "lint": "standard",
     "test": "NODE_OPTIONS='--experimental-vm-modules' jest",
+    "postinstall": "prisma generate",
     "worker": "tsx --trace-warnings worker/index.js"
   },
   "dependencies": {
